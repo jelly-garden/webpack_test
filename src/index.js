@@ -1,10 +1,27 @@
-import { add, hello } from './util';
 import './style.css';
 import './header.css';
-import logo from './images/logo.png';
+import List from './list';
 
-const text = hello('<h1>안녕하세요</h1>');
-const num = add(1, 2);
-const img = `<img src="${logo}" alt="웹팩" />`;
+const users = [{
+        id: 1,
+        name: "John"
+    },
+    {
+        id: 2,
+        name: "Pete"
+    },
+    {
+        id: 3,
+        name: "Mary"
+    },
+    {
+        id: 2,
+        name: "Bob"
+    },
+    {
+        id: 3,
+        name: "Sam"
+    },
+];
 
-document.getElementById('root').innerHTML = img + text + num;
+document.getElementById("root").appendChild(List({ userList: users }));
