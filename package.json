@@ -1,0 +1,20 @@
+{
+  "name": "webpack_test",
+  "version": "1.0.0",
+  "description": "프론트엔드 개발을 위한 웹팩 설정",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jelly-garden/webpack_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jelly-garden/webpack_test/issues"
+  },
+  "homepage": "https://github.com/jelly-garden/webpack_test#readme"
+}
