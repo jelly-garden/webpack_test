@@ -7,6 +7,17 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'), // output directory
         filename: 'main.js' // output file name
     },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ],
+            }
+        ]
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html'
